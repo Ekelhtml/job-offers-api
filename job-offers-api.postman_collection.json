@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "9e0ee8ab-fe60-4550-af8f-594aa3b1f84c",
+		"name": "Job Offers Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11047068"
+	},
+	"item": [
+		{
+			"name": "localhost:8080",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobOffers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "name",
+						"value": "Ekel",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/jobOffers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"jobOffers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobOffers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Frontend Developer\",\r\n    \"description\": \"Description 2\",\r\n    \"job_requirements\": \"React JS\",\r\n    \"job_availability\": \"Full time\",\r\n    \"salary\": [\r\n        {\r\n            \"amount\": 180000,\r\n            \"currency\": \"ARS\"\r\n        }\r\n    ],\r\n    \"vacancy_closed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/jobOffers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"jobOffers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobOffers/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/jobOffers/{id}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"jobOffers",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/jobOffers/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/jobOffers/{id}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"jobOffers",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
